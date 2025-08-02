@@ -12,7 +12,7 @@
   <% products.forEach(product => { %>
     <li>
       <h2><%= product.title %></h2>
-      <img src="<%= product.image %>" alt="Product Image" />
+      <img src="<%= product.image.Url %>" alt="Product Image" />
       <p>Price: ₹<%= product.price %></p>
       <a href="/products/detail/<%= product._id %>">Details</a> |
       <a href="/products/update/<%= product._id %>">Edit</a> |
